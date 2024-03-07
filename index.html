@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soat</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.container{
+			width: 1500px;
+			height: 1000px;
+			background-image: url("soat.png");
+			background-size: 1900px 1000px;
+			position: relative;
+		}
+		.strelka1{
+			width: 60px;
+			height: 250px;
+			position: absolute;
+			top: 210px;
+			left: 850px;
+			transition: all 120s;
+			transform-origin: center bottom;
+			/* animation-name: bajar; */
+		}
+		.block{
+			width: 100px;
+			height: 100px;
+			border-radius: 100%;
+			background-color: black;
+			position: absolute;
+			top: 390px;
+			left: 829px;
+		}
+		.strelka2{
+			width: 20px;
+			height: 300px;
+			position: absolute;
+			top: 161px;
+			left: 872px;
+			transition: all 120s;
+			transform-origin: center bottom;
+		}
+		.strelka3{
+			width: 30px;
+			height: 315px;
+			position: absolute;
+			top: 140px;
+			left: 868px;
+			transition: all 120s;
+			transform-origin: center bottom;
+			/* animation-name: bajar;
+			animation-delay: 0s;
+			animation-iteration-count:infinite ; */
+		}
+		.container:hover .strelka3{
+			transform: rotate(51840deg);
+		}
+		.container:hover .strelka2{
+			transform: rotate(4320deg);
+		}
+		.container:hover .strelka1{
+			transform: rotate(360deg);
+		}
+		/* @keyframes bajar{
+			from{
+				transform:rotate(0deg)
+			}			
+			25%{
+				transform:rotate(90deg)
+			}
+			50%{
+				transform:rotate(180deg)
+			}
+			75%{
+				transform:rotate(270deg)
+			}
+			to%{
+				transform:rotate(360deg)
+			}
+		} */
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="soat1.png" class="strelka1">
+		<img src="minut.png" class="strelka2">
+		<img src="strelka2.png" class="strelka3">
+		<div class="block"></div>
+	</div>
+</body>
+</html>
